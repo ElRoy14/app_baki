@@ -7,14 +7,30 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_menu_camera"
-            android:title="@string/menu_home" />
+            android:title="Portada" />
         <item
             android:id="@+id/nav_gallery"
             android:icon="@drawable/ic_menu_gallery"
-            android:title="@string/menu_gallery" />
+            android:title="Personajes" />
         <item
             android:id="@+id/nav_slideshow"
             android:icon="@drawable/ic_menu_slideshow"
-            android:title="@string/menu_slideshow" />
+            android:title="Momentos" />
+
+        <item
+            android:id="@+id/nav_AcercaDe"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="AcercaDe" />
+
+        <item
+            android:id="@+id/nav_MiVida"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="MiVida" />
+
+        <item
+            android:id="@+id/nav_Contratame"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Contratame" />
+
     </group>
 </menu>

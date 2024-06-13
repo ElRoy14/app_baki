@@ -8,18 +8,36 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.appsmoviles.tarea5movil_app_tematica.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:label="Portada"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.appsmoviles.tarea5movil_app_tematica.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:label="Momentos"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.appsmoviles.tarea5movil_app_tematica.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label="Personajes"
         tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_AcercaDe"
+        android:name="com.appsmoviles.tarea5movil_app_tematica.ui.acercade.AcercaDeFragment"
+        android:label="Acerca De"
+        tools:layout="@layout/fragment_acercade" />
+
+    <fragment
+        android:id="@+id/nav_MiVida"
+        android:name="com.appsmoviles.tarea5movil_app_tematica.ui.mivida.MiVidaFragment"
+        android:label="Mi Vida"
+        tools:layout="@layout/fragment_mivida" />
+
+    <fragment
+        android:id="@+id/nav_Contratame"
+        android:name="com.appsmoviles.tarea5movil_app_tematica.ui.contratame.ContratameFragment"
+        android:label="Contratame"
+        tools:layout="@layout/fragment_contratame" />
 </navigation>
