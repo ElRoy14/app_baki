@@ -4,9 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.appsmoviles.tarea5movil_app_tematica.databinding.FragmentAcercadeBinding
 import com.appsmoviles.tarea5movil_app_tematica.databinding.FragmentMividaBinding
+import com.appsmoviles.tarea5movil_app_tematica.databinding.FragmentMomentosBinding
 
 class MiVidaFragment : Fragment() {
 
@@ -22,7 +24,11 @@ class MiVidaFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        val root = inflater.inflate(com.appsmoviles.tarea5movil_app_tematica.R.layout.fragment_mivida, container, false)
+        _binding = FragmentMividaBinding.inflate(inflater, container, false)
+        val root : View = binding.root
+
+        var textView : TextView = binding.textMivida
+        textView.text = "Mi vida Baki App"
         return root
     }
 

@@ -1,4 +1,4 @@
-package com.appsmoviles.tarea5movil_app_tematica.ui.gallery
+package com.appsmoviles.tarea5movil_app_tematica.ui.momentos
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,11 +7,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.appsmoviles.tarea5movil_app_tematica.databinding.FragmentGalleryBinding
+import com.appsmoviles.tarea5movil_app_tematica.databinding.FragmentMomentosBinding
 
-class GalleryFragment : Fragment() {
+class MomentosFragment : Fragment() {
 
-    private var _binding: FragmentGalleryBinding? = null
+    private var _binding: FragmentMomentosBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,16 +22,12 @@ class GalleryFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        val galleryViewModel =
-            ViewModelProvider(this).get(GalleryViewModel::class.java)
 
-        _binding = FragmentGalleryBinding.inflate(inflater, container, false)
+        _binding = FragmentMomentosBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textGallery
-        galleryViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+        val textView: TextView = binding.textMomentos
+        textView.text = "Momentos Baki App"
         return root
     }
 

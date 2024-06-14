@@ -3,25 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_Portada">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.appsmoviles.tarea5movil_app_tematica.ui.home.HomeFragment"
+        android:id="@+id/nav_Portada"
+        android:name="com.appsmoviles.tarea5movil_app_tematica.ui.portada.PortadaFragment"
         android:label="Portada"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_portada" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.appsmoviles.tarea5movil_app_tematica.ui.gallery.GalleryFragment"
-        android:label="Momentos"
-        tools:layout="@layout/fragment_gallery" />
-
-    <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.appsmoviles.tarea5movil_app_tematica.ui.slideshow.SlideshowFragment"
+        android:id="@+id/nav_Personajes"
+        android:name="com.appsmoviles.tarea5movil_app_tematica.ui.personajes.PersonajesFragment"
         android:label="Personajes"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_personajes" />
+
+    <fragment
+        android:id="@+id/nav_Momentos"
+        android:name="com.appsmoviles.tarea5movil_app_tematica.ui.momentos.MomentosFragment"
+        android:label="Momentos"
+        tools:layout="@layout/fragment_momentos" />
 
     <fragment
         android:id="@+id/nav_AcercaDe"

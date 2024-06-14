@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         // menu should be considered as top level destinations.
         appBarConfiguration = AppBarConfiguration(
             setOf(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_AcercaDe
+                R.id.nav_Portada, R.id.nav_Personajes, R.id.nav_AcercaDe, R.id.nav_Momentos, R.id.nav_MiVida
             ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

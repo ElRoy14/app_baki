@@ -6,11 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.fragment.ktx.R
 import com.appsmoviles.tarea5movil_app_tematica.databinding.FragmentAcercadeBinding
-import com.appsmoviles.tarea5movil_app_tematica.databinding.FragmentHomeBinding
-import com.appsmoviles.tarea5movil_app_tematica.ui.home.HomeViewModel
 
 class AcercaDeFragment : Fragment() {
 
@@ -26,7 +22,12 @@ class AcercaDeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
 
-        val root = inflater.inflate(com.appsmoviles.tarea5movil_app_tematica.R.layout.fragment_acercade, container, false)
+        _binding = FragmentAcercadeBinding.inflate(inflater, container, false)
+        val root: View = binding.root
+
+        var textView : TextView = binding.textAcercade
+        textView.text = "Acerca de Baki App"
+
         return root
     }
 
