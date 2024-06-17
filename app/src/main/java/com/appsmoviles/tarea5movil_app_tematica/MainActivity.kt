@@ -12,6 +12,7 @@ import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.appsmoviles.tarea5movil_app_tematica.databinding.ActivityMainBinding
+import com.appsmoviles.tarea5movil_app_tematica.R
 
 class MainActivity : AppCompatActivity() {
 

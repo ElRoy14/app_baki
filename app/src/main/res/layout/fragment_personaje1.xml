@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/fragment_personaje1"
+    tools:context=".ui.personajes.personaje1Fragment">
+
+    <Button
+        android:id="@+id/btn_salida"
+        android:layout_width="75dp"
+        android:layout_height="78dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/boton_redondo"
+        android:text="Volver"
+        android:textSize="10dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="604dp"
+        android:text="Personaje 1" />
+
+</FrameLayout>
