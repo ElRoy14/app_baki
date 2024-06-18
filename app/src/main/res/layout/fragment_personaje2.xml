@@ -6,22 +6,63 @@
     android:background="#575a5e"
     tools:context=".ui.personajes.personaje2Fragment">
 
-    <Button
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btn_salida"
-        android:layout_width="75dp"
-        android:layout_height="78dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/boton_redondo"
-        android:text="Volver"
-        android:textSize="10dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:clickable="true"
+        android:src="?attr/homeAsUpIndicator"
+        android:layout_gravity="bottom|end" />
+
+    <RelativeLayout
+        android:layout_width="356dp"
+        android:layout_height="555dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:background="@drawable/border_image"
+        android:clipToOutline="true"
+        android:cropToPadding="true"
+        android:orientation="horizontal"
+        android:scaleType="centerCrop">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/yujiro"
+            android:background="@drawable/border_image"
+            android:clipToOutline="true"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/piedra_regular"
+            android:textColor="@color/black"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:text="Yuujiro Hanma , es el padre de Baki y Jack Hanma . Es el principal antagonista de toda la franquicia Baki. Yuujirou es el hijo de Yuuichirou Hanma y el personaje más fuerte de la serie hasta el momento. Yuujirou trabaja como mercenario y asesino independiente muy bien pagado para varios gobiernos y organizaciones."
+            android:textSize="20dp" />
+
+    </RelativeLayout>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Personaje 2" />
+        android:id="@+id/text_personaje2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/piedra_regular"
+        android:layout_marginTop="10dp"
+        android:text="YUJIRO HANMA"
+        android:textSize="30dp" />
 
 </FrameLayout>

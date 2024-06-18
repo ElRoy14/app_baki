@@ -6,22 +6,62 @@
     android:background="#575a5e"
     tools:context=".ui.personajes.personajes3Fragment">
 
-    <Button
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btn_salida"
-        android:layout_width="75dp"
-        android:layout_height="78dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/boton_redondo"
-        android:text="Volver"
-        android:textSize="10dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:clickable="true"
+        android:src="?attr/homeAsUpIndicator"
+        android:layout_gravity="bottom|end" />
+
+    <RelativeLayout
+        android:layout_width="356dp"
+        android:layout_height="555dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:background="@drawable/border_image"
+        android:clipToOutline="true"
+        android:cropToPadding="true"
+        android:orientation="horizontal"
+        android:scaleType="centerCrop">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/jack"
+            android:background="@drawable/border_image"
+            android:clipToOutline="true"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/piedra_regular"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:textSize="20dp"
+            android:text="Jack Hanma Es un luchador de Canadá e hijo de Yuujirou Hanma y Diane Neil , una agente canadiense de las Naciones Unidas a quien Yuujirou conoció durante la Guerra de Vietnam. Al igual que su hermano, Baki Hanma , desde pequeño ha deseado superar a su padre en fuerza y ​​habilidad marcial."/>
+
+    </RelativeLayout>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Personaje 3" />
+        android:id="@+id/text_personaje3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/piedra_regular"
+        android:layout_marginTop="10dp"
+        android:text="JACK HANMA"
+        android:textSize="30dp" />
 
 </FrameLayout>

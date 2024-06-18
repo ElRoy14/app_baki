@@ -1,5 +1,8 @@
 package com.appsmoviles.tarea5movil_app_tematica.ui.personajes
 
+import android.graphics.Color
+import android.graphics.LinearGradient
+import android.graphics.Shader
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -26,6 +29,15 @@ class personajes3Fragment : Fragment() {
     ): View? {
         _binding = FragmentPersonajes3Binding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        val myShader: Shader = LinearGradient(
+            0f, 50f, 0f, 100f,
+            Color.WHITE, Color.parseColor("#bc131f"),
+            Shader.TileMode.CLAMP
+        )
+
+        binding.textPersonaje3.text = "JACK HANMA"
+        binding.textPersonaje3.paint.setShader(myShader)
 
         binding.btnSalida.setOnClickListener{
             childFragmentManager.commit {

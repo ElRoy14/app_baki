@@ -7,22 +7,63 @@
     android:id="@+id/fragment_personaje4"
     tools:context=".ui.personajes.personaje4Fragment">
 
-    <Button
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btn_salida"
-        android:layout_width="75dp"
-        android:layout_height="78dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/boton_redondo"
-        android:text="Volver"
-        android:textSize="10dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:clickable="true"
+        android:src="?attr/homeAsUpIndicator"
+        android:layout_gravity="bottom|end" />
+
+    <RelativeLayout
+        android:layout_width="356dp"
+        android:layout_height="555dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:background="@drawable/border_image"
+        android:clipToOutline="true"
+        android:cropToPadding="true"
+        android:orientation="horizontal"
+        android:scaleType="centerCrop">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/kaoru"
+            android:background="@drawable/border_image"
+            android:clipToOutline="true"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/piedra_regular"
+            android:textColor="@color/black"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:textSize="20dp"
+            android:text="Kaoru Hanayama Es conocido como el Yakuza más fuerte de Japón y uno de los personajes más fuertes de la serie. Es el jefe de segunda generación del Grupo Hanayama. Tiene cicatrices de múltiples heridas en el cuerpo y su tatuaje en la espalda parece un rompecabezas debido a las muchas cicatrices."/>
+
+    </RelativeLayout>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Personaje 4" />
+
+        android:id="@+id/text_personaje4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/piedra_regular"
+        android:layout_marginTop="10dp"
+        android:text="KAORU HANAYAMA"
+        android:textSize="30dp" />
 
 </FrameLayout>

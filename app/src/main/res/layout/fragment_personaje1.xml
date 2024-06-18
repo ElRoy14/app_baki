@@ -1,28 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#575a5e"
     android:id="@+id/fragment_personaje1"
-    tools:context=".ui.personajes.personaje1Fragment">
+    tools:context=".ui.personajes.personaje1Fragment"
+    tools:ignore="ExtraText">
 
-    <Button
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btn_salida"
-        android:layout_width="75dp"
-        android:layout_height="78dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/boton_redondo"
-        android:text="Volver"
-        android:textSize="10dp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="16dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:clickable="true"
+        android:src="?attr/homeAsUpIndicator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_gravity="bottom|end"
+        app:layout_constraintVertical_bias="2" />
+
+    <RelativeLayout
+        android:layout_width="356dp"
+        android:layout_height="555dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:background="@drawable/border_image"
+        android:clipToOutline="true"
+        android:cropToPadding="true"
+        android:orientation="horizontal"
+        android:scaleType="centerCrop">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/baki"
+            android:background="@drawable/border_image"
+            android:clipToOutline="true"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/piedra_regular"
+            android:textColor="@color/black"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp"
+            android:text="Baki Hanma a los trece años decidió tomar en sus propias manos su entrenamiento para realizar un entrenamiento más intenso siguiendo los pasos de su padre. Más tarde pretende derrotarlo. Baki peleó por primera vez en la arena sin reglas a los quince años y se convirtió en su campeón. Es hijo de Yuujirou Hanma y Emi Akezawa y medio hermano de Jack Hanma ."
+            android:textSize="20dp" />
+
+    </RelativeLayout>
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="604dp"
-        android:text="Personaje 1" />
+        android:id="@+id/text_personaje1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/piedra_regular"
+        android:layout_marginTop="10dp"
+        android:text="BAKI HANMA"
+        android:textSize="30dp" />
 
 </FrameLayout>
