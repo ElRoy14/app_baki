@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#575a5e"
+    android:id="@+id/fragment_momentos"
     tools:context=".ui.momentos.MomentosFragment">
 
     <TextView
@@ -15,9 +16,121 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="40sp"
+        android:fontFamily="@font/piedra_regular"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.038" />
+
+
+    <ImageView
+        android:id="@+id/momento1"
+        android:layout_width="238dp"
+        android:layout_height="151dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="84dp"
+        android:src="@drawable/baki_vs_kaoru"
+        android:background="@drawable/border_image"
+        android:adjustViewBounds="true"
+        android:clipToOutline="true"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="257dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="76dp"
+        android:fontFamily="@font/piedra_regular"
+        android:text="Baki vs Hanayama"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.337" />
+
+    <TextView
+        android:layout_width="257dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="76dp"
+        android:fontFamily="@font/piedra_regular"
+        android:text="Retsu vs Pickle"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.624" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="257dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="644dp"
+        android:layout_marginEnd="64dp"
+        android:fontFamily="@font/piedra_regular"
+        android:text="Baki vs Yujiro"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/momento2"
+        android:layout_width="238dp"
+        android:layout_height="151dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="84dp"
+        android:src="@drawable/retsu_vs_pickle"
+        android:background="@drawable/border_image"
+        android:adjustViewBounds="true"
+        android:clipToOutline="true"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/momento3"
+        android:layout_width="238dp"
+        android:layout_height="151dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="84dp"
+        android:src="@drawable/baki_vs_yujiro"
+        android:background="@drawable/border_image"
+        android:adjustViewBounds="true"
+        android:clipToOutline="true"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.851"
+        tools:ignore="MissingConstraints" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
