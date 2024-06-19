@@ -24,6 +24,44 @@
         android:layout_gravity="bottom|end"
         app:layout_constraintVertical_bias="2" />
 
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border_image"
+        android:adjustViewBounds="true"
+        android:clipToOutline="true"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="2">
+
+        <WebView
+            android:id="@+id/VideoMomento2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/piedra_regular"
+            android:text="Pickle se despierta después de sentir una 'señal de peligro' de Retsu, quien se acercó a él para pelear. A pesar de que Retsu le dio varios golpes que serían letales para un humano normal, Pickle se levanta ileso y comenzó a morder a Retsu. Retsu logró golpear a Pickle en la cara, pero solo provocó que este sangrara un poco, mientras que fue lanzado hacia atrás hasta el final de la entrada de la Arena. Mitsunari, que se dio cuenta de la situación, decidió evitar que Pickle devorara a Retsu."
+            android:textSize="15.8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="1dp"/>
+
+
+    </RelativeLayout>
+
     <TextView
         android:layout_width="240dp"
         android:layout_height="34dp"

@@ -24,6 +24,44 @@
         android:layout_gravity="bottom|end"
         app:layout_constraintVertical_bias="2" />
 
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border_image"
+        android:adjustViewBounds="true"
+        android:clipToOutline="true"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="2">
+
+        <WebView
+            android:id="@+id/VideoMomento3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:fontFamily="@font/piedra_regular"
+            android:text="Luego de una cena padre e hijo baki le falta al respeto a su padre, lo que desencadena una pelea que aparenta más un castigo de padre a hijo, lo que sigue es una pelea tan intensa que llegas cientos de personas a espectar, incluso aparece la presencia de Yuichiro Hanma el abuelo de Baki, la pelea termina cuando  el padre y el hijo comparten una comida imaginaria, aunque Baki no derrota a Yujiro, finalmente logra darle una buena pelea e impresionarlo, lo que incita a Yujiro a honrar a Baki con el título de más fuerte en la Tierra."
+            android:textSize="15.8dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"/>
+
+
+    </RelativeLayout>
+
     <TextView
         android:layout_width="240dp"
         android:layout_height="34dp"
