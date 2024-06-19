@@ -1,6 +1,9 @@
 package com.appsmoviles.tarea5movil_app_tematica.ui.momentos
 
 import android.annotation.SuppressLint
+import android.graphics.Color
+import android.graphics.LinearGradient
+import android.graphics.Shader
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -30,6 +33,15 @@ class momento2Fragment : Fragment() {
     ): View {
         _binding = FragmentMomento2Binding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        val myShader: Shader = LinearGradient(
+            0f, 30f, 0f, 55f,
+            Color.WHITE, Color.parseColor("#bc131f"),
+            Shader.TileMode.CLAMP
+        )
+
+        binding.textMomento2.text = "RETSU KAIOH VS PICKLE"
+        binding.textMomento2.paint.setShader(myShader)
 
         CargarVideo()
 

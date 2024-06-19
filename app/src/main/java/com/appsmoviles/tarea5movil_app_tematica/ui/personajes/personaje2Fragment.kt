@@ -31,7 +31,7 @@ class personaje2Fragment : Fragment() {
         val root: View = binding.root
 
         val myShader: Shader = LinearGradient(
-            0f, 50f, 0f, 100f,
+            0f, 35f, 0f, 55f,
             Color.WHITE, Color.parseColor("#bc131f"),
             Shader.TileMode.CLAMP
         )
