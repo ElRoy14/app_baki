@@ -55,6 +55,7 @@
             android:fontFamily="@font/piedra_regular"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
+            android:textColor="@color/black"
             android:textSize="15.8dp"
             android:text="Hanayama originalmente buscaba luchar contra Baki como una forma de llamar la atención de Yujiro, Baki llega a una disco propiedad de Hanayama, la pelea comienza cuando Hanayama ataca a Baki con un ataque sorpresa, a partir de ahí desatan una brutal pelea que acaba cuando, Hanayama declara a Baki como el ganador debido al hecho de que Baki escondió un vidrio dentro de su mejilla para devolverle la conciencia después de ser noqueado y Hanayama ya no puede luchar porque no le queda energía."
             android:layout_alignParentBottom="true"

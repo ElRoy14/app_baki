@@ -54,6 +54,7 @@
             android:layout_height="275dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="15dp"
+            android:textColor="@color/black"
             android:fontFamily="@font/piedra_regular"
             android:text="Luego de una cena padre e hijo baki le falta al respeto a su padre, lo que desencadena una pelea que aparenta más un castigo de padre a hijo, lo que sigue es una pelea tan intensa que llegas cientos de personas a espectar, incluso aparece la presencia de Yuichiro Hanma el abuelo de Baki, la pelea termina cuando  el padre y el hijo comparten una comida imaginaria, aunque Baki no derrota a Yujiro, finalmente logra darle una buena pelea e impresionarlo, lo que incita a Yujiro a honrar a Baki con el título de más fuerte en la Tierra."
             android:textSize="15.8dp"

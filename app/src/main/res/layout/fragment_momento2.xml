@@ -54,6 +54,7 @@
             android:layout_height="275dp"
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
+            android:textColor="@color/black"
             android:fontFamily="@font/piedra_regular"
             android:text="Pickle se despierta después de sentir una 'señal de peligro' de Retsu, quien se acercó a él para pelear. A pesar de que Retsu le dio varios golpes que serían letales para un humano normal, Pickle se levanta ileso y comenzó a morder a Retsu. Retsu logró golpear a Pickle en la cara, pero solo provocó que este sangrara un poco, mientras que fue lanzado hacia atrás hasta el final de la entrada de la Arena. Mitsunari, que se dio cuenta de la situación, decidió evitar que Pickle devorara a Retsu."
             android:textSize="15.8dp"

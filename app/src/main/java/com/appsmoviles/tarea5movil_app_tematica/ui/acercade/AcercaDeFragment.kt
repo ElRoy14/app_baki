@@ -1,5 +1,8 @@
 package com.appsmoviles.tarea5movil_app_tematica.ui.acercade
 
+import android.graphics.Color
+import android.graphics.LinearGradient
+import android.graphics.Shader
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -25,8 +28,12 @@ class AcercaDeFragment : Fragment() {
         _binding = FragmentAcercadeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        var textView : TextView = binding.textAcercade
-        textView.text = "Acerca de Baki App"
+        val myShader: Shader = LinearGradient(
+            0f, 35f, 0f, 55f,
+            Color.WHITE, Color.parseColor("#bc131f"),
+            Shader.TileMode.CLAMP
+        )
+
 
         return root
     }
