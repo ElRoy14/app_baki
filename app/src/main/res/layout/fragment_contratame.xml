@@ -3,97 +3,167 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#575a5e"
+    android:background="@color/black"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <RelativeLayout
+        android:id="@+id/relativeLayout2"
         android:layout_width="match_parent"
-        android:layout_height="731dp"
+        android:layout_height="350dp"
+        android:background="@drawable/border_image"
+        android:backgroundTint="#8C0303"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="2dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/border_image"
+            android:clipToOutline="true"
+            android:cropToPadding="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/roylin" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="257dp"
+            android:layout_marginEnd="176dp"
+            android:layout_marginBottom="54dp"
+            android:fontFamily="@font/kanit_bold"
+            android:text="Roylin E. Jimenez"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="301dp"
+            android:layout_marginEnd="137dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/kanit_bold"
+            android:text="Back-End Developer"
+            android:textColor="#8C0303"
+            android:textSize="25dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/border_image"
+        android:backgroundTint="#575a5e"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
-            android:src="@drawable/roylin"
-
-            />
-
-        <View
-            android:id="@+id/view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentBottom="true"
-            android:layout_marginBottom="-10dp"
-            android:background="@drawable/gradient_c" />
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
 
         <TextView
             android:layout_width="wrap_content"
-            android:layout_height="74dp"
+            android:layout_height="41dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="3dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginEnd="-3dp"
-            android:layout_marginBottom="642dp"
-            android:fontFamily="@font/piedra_regular"
-            android:text="#OPEN TO WORK"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="213dp"
+            android:layout_marginBottom="299dp"
+            android:fontFamily="@font/kanit_bold"
+            android:text="SOBRE MI"
             android:textColor="@color/white"
-            android:textSize="50dp" />
-
+            android:textSize="30dp" />
 
         <TextView
-            android:layout_width="372dp"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="9dp"
-            android:layout_marginTop="501dp"
-            android:layout_marginEnd="29dp"
-            android:layout_marginBottom="156dp"
-            android:fontFamily="@font/piedra_regular"
-            android:text="Roylin E. Jimenez"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="162dp"
+            android:layout_marginEnd="165dp"
+            android:layout_marginBottom="147dp"
+            android:fontFamily="@font/kanit_bold"
+            android:text="CONTACTAME"
             android:textColor="@color/white"
-            android:textSize="50dp" />
+            android:textSize="30dp" />
 
         <TextView
-            android:layout_width="329dp"
-            android:layout_height="57dp"
+            android:layout_width="wrap_content"
+            android:layout_height="113dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="9dp"
-            android:layout_marginTop="568dp"
-            android:layout_marginEnd="73dp"
-            android:layout_marginBottom="106dp"
-            android:fontFamily="@font/piedra_regular"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="181dp"
+            android:fontFamily="@font/kanit_semibold"
+            android:text="Experiencia trabajando con la arquitectura MVC con .NET Core, en el desarrollo de soluciones del lado del servidor, utilizando el DBMS MySQL, participación en gestión de proyecto y control de versiones con GIT, trabajando en AlticeDo."
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <TextView
+            android:layout_width="212dp"
+            android:layout_height="22dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="204dp"
+            android:layout_marginEnd="164dp"
+            android:layout_marginBottom="123dp"
+            android:fontFamily="@font/kanit_semibold"
             android:text="roylinrodriguez5@gmail.com"
             android:textColor="@color/white"
-            android:textSize="25dp" />
+            android:textSize="14dp" />
 
         <ImageView
-            android:id="@+id/qr_linkendin"
-            android:layout_width="111dp"
+            android:layout_width="wrap_content"
             android:layout_height="110dp"
             android:layout_alignParentStart="true"
-
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="9dp"
-            android:layout_marginTop="607dp"
-            android:layout_marginEnd="291dp"
-            android:layout_marginBottom="14dp"
-            android:src="@color/white" />
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="228dp"
+            android:layout_marginEnd="264dp"
+            android:layout_marginBottom="11dp"
+            android:src="@drawable/qr_github" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="111dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="261dp"
+            android:layout_marginTop="227dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="11dp"
+            android:src="@drawable/qr_linkendin" />
 
     </RelativeLayout>
 

@@ -27,8 +27,7 @@ class MiVidaFragment : Fragment() {
         _binding = FragmentMividaBinding.inflate(inflater, container, false)
         val root : View = binding.root
 
-        var textView : TextView = binding.textMivida
-        textView.text = "Mi vida Baki App"
+        
         return root
     }
 

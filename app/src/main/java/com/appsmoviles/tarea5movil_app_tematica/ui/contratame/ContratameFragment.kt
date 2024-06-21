@@ -27,8 +27,6 @@ class ContratameFragment : Fragment() {
         _binding = FragmentContratameBinding.inflate(inflater, container, false)
         val root : View = binding.root
 
-        var textView : TextView = binding.textContratame
-        textView.text = "Contratame Baki App"
         return root
     }
 
