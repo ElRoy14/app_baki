@@ -1,2 +1,2 @@
-# app_baki
-Desarrollo de mi Propia Aplicación Móvil Temática
+# App_Baki
+Desarrollo de Aplicación con tématica sobre una serie en este caso la serie Baki the Grappler
