@@ -1,17 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#575a5e"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.mivida.MiVidaFragment">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/baki_training" />
 
     <TextView
-        android:id="@+id/text_mivida"
-        android:layout_width="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="198dp"
+        android:layout_height="55dp"
+        android:text="Reflexión"
+        android:fontFamily="@font/piedra_regular"
+        android:textSize="40dp"
+        android:textColor="#bc131f"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.208" />
+
+    <TextView
+        android:layout_width="193dp"
+        android:layout_height="113dp"
+        android:fontFamily="@font/piedra_regular"
+        android:text="Importancia en Mi Vida"
+        android:textAlignment="center"
+        android:textColor="#bc131f"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.881" />
+
+    <VideoView
+        android:id="@+id/VideoMiVida"
+        android:layout_width="245dp"
+        android:layout_height="297dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/borders_around"
+        android:clipToOutline="true"
+        android:cropToPadding="true"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_height="wrap_content"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.52"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
